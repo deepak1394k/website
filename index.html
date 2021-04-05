@@ -1,1 +1,51 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">KD Portfolio</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="videos/video.mp4" muted loop autoplay>
+      </video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>I am a computer science graduate.</h2>
+        <h3>Learning new technologies</h3>
+        <p> My name is Deepak. I developed a website. Please click the link below.</p>
+          <a href="https://www.kothaas.com">Visit My Website</a>
+      </div>
+
+      <ul class="social">
+        <li><a href="https://www.fb.com"><img src="images/fb.png" alt="Facebook icon"></a></li>
+        <li><a href="https://www.instagram.com"><img src="images/insta.png" alt="Instagram icon"></a></li>
+        <li><a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube icon"></a></li>
+      </ul>
+
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
+  </body>
+</html>
